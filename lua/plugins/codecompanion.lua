@@ -1,42 +1,42 @@
 return {
-  -- {
-  --   "olimorris/codecompanion.nvim",
-  --   lazy = false,
-  --   dependencies = {
-  --     "nvim-lua/plenary.nvim",
-  --     "nvim-treesitter/nvim-treesitter",
-  --   },
-  --   opts = {
-  --     -- NOTE: The log_level is in `opts.opts`
-  --     opts = {
-  --     },
-  --   },
-  --   keys = {
-  --     { 
-  --       "<leader>cc", 
-  --       "<cmd>CodeCompanion<CR>",
-  --       desc = "Code Companion",
-  --       mode = { "n", "v"}
-  --     },
-  --     { 
-  --       "<C-a>",
-  --       "<cmd>CodeCompanionActions<CR>", 
-  --       desc = "Code Companion Actions",
-  --       mode = { "n", "v"},
-  --     },
-  --     {
-  --       "<Leader>a",
-  --       "<cmd>CodeCompanionChat Toggle<CR>",
-  --       desc = "Code Companion Chat",
-  --       mode = { "n", "v" },
-  --     },
-  --     {
-  --       "<LocalLeader>a",
-  --       "<cmd>CodeCompanionChat Add<CR>",
-  --       desc = "Add code to chat buffer",
-  --       mode = { "v" },
-  --     }
-  --
-  --   }
-  -- },
+  {
+    "olimorris/codecompanion.nvim",
+    lazy = false,
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+    opts = {
+      -- NOTE: The log_level is in `opts.opts`
+      opts = {
+      },
+    },
+    keys = {
+      { 
+        "<leader>cc", 
+        "<cmd>CodeCompanion<CR>",
+        desc = "Code Companion",
+        mode = { "n", "v"}
+      },
+      { 
+        "<leader>ca",
+        "<cmd>CodeCompanionActions<CR>", 
+        desc = "Code Companion Actions",
+        mode = { "n", "v"},
+      },
+      {
+        "<Leader>ct",
+        "<cmd>CodeCompanionChat Toggle<CR>",
+        desc = "Code Companion Chat",
+        mode = { "n", "v" },
+      },
+      {
+        "<LocalLeader>a",
+        "<cmd>CodeCompanionChat Add<CR>",
+        desc = "Add code to chat buffer",
+        mode = { "v" },
+      }
+
+    }
+  },
 }
