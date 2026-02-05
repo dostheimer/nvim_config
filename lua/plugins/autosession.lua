@@ -1,4 +1,7 @@
+vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
+
 return {
+  
   -- auto-session
   {
     "rmagatti/auto-session",
@@ -9,6 +12,7 @@ return {
     ---@type AutoSession.Config
     opts = {
       suppressed_dirs = { "~/", "~/Downloads", "~/Documents", "~/Desktop/"},
+      sessienoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
     },
 
     keys = {
@@ -25,3 +29,5 @@ return {
     }
   },
 }
+
+
